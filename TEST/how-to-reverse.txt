@@ -1,0 +1,12 @@
+hold - ctrl + shift
+type U202E
+release ctrl + shift
+
+
+pdf -> fdp
+
+high-level-complexe.pdf -> high-level-compl__ pdf.exe
+
+high-level-compl‮fdp.exe
+
+high-level-complfdp.exe

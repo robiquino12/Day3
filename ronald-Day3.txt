@@ -1,0 +1,168 @@
+Install a hybrid: IAM azure server.
+UTM: unified theat management
+firewall
+vpn server
+anti virus enterprise
+IPS/IDS
+NAT: net ad control
+
+Step: 1 powershell
+hostname
+rename-computer iam71
+set-netfirewallprofile -name public,private,domain -enabled false
+
+ncpa.cpl
+restart-computer
+
+OU:     user:    globalgroup:  domlocagroup
+adm	ag	adgg		corpexLG
+soc	sg,ac	scgg		scoLG
+hrd	hg,hb	hrgg		hrfLG
+fin	fg	figg		loansLG
+act	ab	acgg		sweldoLG
+
+C1sc0123
+
+Task 3: how to be abckup engineer
+
+diskmgmt.msc
+Where to backup/store critical data:
+"Rule of 3": always save i 3 place:
+locally + cloud + somewhere else
+
+
+1000mb = 1gb
+1000gb = 1tb
+1000tb = 1pb
+
+type of storage
+simple volume: default storage
+spanned volume: garbage collector
+raid zero: best for internet cafe 4k videos
+raid one: best to protect OS: windows/linux
+raid 5: best to protect SL databases
+
+iste backup: 
+backup exec, veritas, veamm, rubrik, and prayers haha
+
+
+explain 
+
+fulttolernce
+
+task 4: group policy to restrict kupal depts.
+
+control panel
+network connection
+cmd
+storage 
+
+
+Task 5: fundamentals of firewall and hackings:
+
+	S-A-S-A-E
+
+
+MORE HACKABLE WINDOWS VS LINUX
+how to get wifi passwords locally/network
+
+netsh wlan show profile name="3F-Rivan" key=clear
+nmap -sP 10.3.3.0/24
+active scanning: nmap -v 10.3.3.162
+
+
+hacker                 victim:
+---------SYN----------->   TCP.FLAGS.SYN == 1
+<--------ACk-------------
+------------SYN/ACK------->
+<-----ESTABLISHED------->
+
+nmap - www.dpwh.gov.ph
+
+
+
+
+
+
+
+how to steal naked px/sex vids from a windows PC: attacke port 139 + 445
+
+attack port 139: net use \\10.3.3.100+kalaban\ipc$ ===> key to establish victim
+attack port 445: net use x: /delete ===> command to clear
+		   net use x: \\10.3.3.162\c$  ==> specify where to attack
+
+
+net use \\10.3.3.162\ipc$
+vpn premuim lifetime
+
+
+netstat -n -p tcp | findstr 445
+
+
+geolocation
+
+
+attack.mitre.org
+
+nmap -v www.fbi.gov
+
+
+config t
+
+
+
+
+
+
+Task&: NETWORK ADDRESS TRANSLATION
+PORT ADDRESS TRANSLATION: NAT/PAT
+
+config t
+no access-list 8
+access-list 8 permit host 192.168.103.10
+access-list 8 permit host 192.168.103.11
+Int Gi 3
+ ip nat Inside
+Int gi 1
+ ip nat Outside
+IP Nat inside source static tcp 192.168.103.10 80 208.8.8.69 80
+IP Nat inside source static tcp 192.168.103.10 443 208.8.8.69 443
+IP Nat inside source static tcp 192.168.103.11 80 208.8.8.69 8080
+IP Nat inside source static tcp 192.168.103.11 443 208.8.8.69 8443
+ip host betlog.com 208.8.8.69
+ip host betlog.ph 208.8.8.69
+
+
+
+BGP.
+
+
+
+ping soc.rivanit.com
+
+http://soc.rivanit.com/otrs/customer.pl
+user1
+C1sc0123
+
+http://soc.rivanit.com/otrs/index.pl
+admin
+C1sc0123
+
+call: 1326
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

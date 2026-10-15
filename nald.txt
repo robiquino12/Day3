@@ -1,0 +1,15 @@
+shwo vlan brief
+sh ip int brief
+
+!@corebaba
+conf t
+monitor session 1 source interface fa0/3, fa0/5, fa0/7
+monitor session 1 destination fa0/1
+end
+
+!@remove monitoring
+conf t
+no monitor session 1
+end
+
+sh mac address-table

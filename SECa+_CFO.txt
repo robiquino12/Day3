@@ -1,0 +1,90 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Administrator> cd desktop
+PS C:\Users\Administrator\desktop> mkdir ronald
+
+
+    Directory: C:\Users\Administrator\desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/13/2026  11:15 AM                ronald
+
+
+PS C:\Users\Administrator\desktop> cd ronald
+PS C:\Users\Administrator\desktop\ronald> git clone https://github.com/robiquino12/SECplus701
+Cloning into 'SECplus701'...
+remote: Enumerating objects: 422, done.
+remote: Counting objects: 100% (212/212), done.
+remote: Compressing objects: 100% (26/26), done.
+Rremote: Total 422 (delta 205), reused 186 (delta 186), pack-reused 210 (from 2)
+Receiving objects: 100% (422/422), 201.15 KiB | 1.31 MiB/s, done.
+Resolving deltas: 100% (245/245), done.
+warning: the following paths have collided (e.g. case-sensitive paths
+on a case-insensitive filesystem) and only one from the same
+colliding group is in the working tree:
+
+  'createWEBSITE.ps1'
+  'createWEBsite.ps1'
+PS C:\Users\Administrator\desktop\ronald> dir
+
+
+    Directory: C:\Users\Administrator\desktop\ronald
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/13/2026  11:15 AM                SECplus701
+
+
+PS C:\Users\Administrator\desktop\ronald> ^C
+PS C:\Users\Administrator\desktop\ronald> ^C
+PS C:\Users\Administrator\desktop\ronald> cd  SECplus701
+PS C:\Users\Administrator\desktop\ronald\SECplus701> dir
+
+
+    Directory: C:\Users\Administrator\desktop\ronald\SECplus701
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/13/2026  11:15 AM            383 AddRemoveForwarders.ps1
+-a----        10/13/2026  11:15 AM           1300 AironetAuto.txt
+-a----        10/13/2026  11:15 AM           1729 AIROPYTOJSON.py
+-a----        10/13/2026  11:15 AM            753 auto-connect.py
+-a----        10/13/2026  11:15 AM            356 autowifi.json
+-a----        10/13/2026  11:15 AM           1847 autowifiV2.py
+-a----        10/13/2026  11:15 AM           3036 ccnpENCORnov23.txt
+-a----        10/13/2026  11:15 AM          48838 Cisco IOS-XE.postman_collection.json
+-a----        10/13/2026  11:15 AM           1567 createDNSrecords.ps1
+-a----        10/13/2026  11:15 AM            159 createWEBsite.ps1
+-a----        10/13/2026  11:15 AM            688 creatingdnsrecords.ps1
+-a----        10/13/2026  11:15 AM          11610 DAY1-FNET-SCCP
+-a----        10/13/2026  11:15 AM          16882 Day1SecuringINFRA.txt
+-a----        10/13/2026  11:15 AM           6950 Day2j22-k25.txt
+-a----        10/13/2026  11:15 AM          11349 day3CompleteRouting.txt
+-a----        10/13/2026  11:15 AM           5293 DAY3realdevvices
+-a----        10/13/2026  11:15 AM          28800 Day4f-Dec12cyBerSEC.txt
+-a----        10/13/2026  11:15 AM          16134 Day5-SwitchMalupetIPv6only.txt
+-a----        10/13/2026  11:15 AM           2423 DayONE.md
+-a----        10/13/2026  11:15 AM          25152 DevOPCrarchCourseV2.txt
+-a----        10/13/2026  11:15 AM            158 dnsZoneTransfer.ps1
+-a----        10/13/2026  11:15 AM             59 installdns.ps1
+-a----        10/13/2026  11:15 AM             88 installWebSERVER.ps1
+-a----        10/13/2026  11:15 AM          16048 PS2024.txt
+
+
+PS C:\Users\Administrator\desktop\ronald\SECplus701> ^C
+PS C:\Users\Administrator\desktop\ronald\SECplus701> certutil -hashfile Day1SecuringINFRA.txt
+SHA1 hash of Day1SecuringINFRA.txt:
+479f591ce68afdb00190aea3ea12d6f842317e1d
+CertUtil: -hashfile command completed successfully.
+PS C:\Users\Administrator\desktop\ronald\SECplus701> certutil -hashfile Day1SecuringINFRA.txt
+SHA1 hash of Day1SecuringINFRA.txt:
+737e16ec3c3bf0debe8a53dfea202cca2573e837
+CertUtil: -hashfile command completed successfully.
+PS C:\Users\Administrator\desktop\ronald\SECplus701>
